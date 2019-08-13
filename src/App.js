@@ -64,6 +64,8 @@ import {
   people
 } from './lessons/lesson9'
 
+import * as addNumbers from './lessons/lesson10'
+
 let {name, state} = generateObj()
 
 let {name:firstName9, state:location} = generateObj();
@@ -127,7 +129,7 @@ function App() {
         <div>{`show addition after template literals ${addition}`}</div>
         <div>show message after template literals in console {console.log(message8)}</div>
       </div>
-      <div className="lesson"><p>Lesson 9 - destructing assignment</p>
+      <div className="lesson"><p>Lesson 9 - destructuring assignment</p>
         {console.log("lesson 9")}
         <div>generate obj state: {state} </div>
         <div>generate obj name: {name} </div>
@@ -141,6 +143,11 @@ function App() {
           }
         </div>
         <div>{console.log(phoneNum(John))}</div>
+      </div>
+      <div className="lesson"><p>Lesson 10 - modules</p>
+        {console.log("lesson 9")}
+        <div>sumTwo 2 + 5 = {addNumbers.sumTwo(2,5)}</div>
+        <div>sumTwo 2 + 5 + 3 = {addNumbers.sumThree(2,5,3)}</div>
       </div>
     </div>
   );
