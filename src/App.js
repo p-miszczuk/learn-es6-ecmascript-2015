@@ -19,6 +19,13 @@ import {
   letFunc
 } from'./lessons/lesson2';
 
+import {
+  greet,
+  greet2,
+  greet3,
+  receive
+} from './lessons/lesson3'
+
 function App() {
   return (
     <div className="lessons">
@@ -30,14 +37,20 @@ function App() {
         <div>{`Score 2x2: ${squared(2)}`}</div>
         <div>{`deliverBoy in console`}{deliverBoy.receive()}</div>
       </div>
-      <div className="lesson"><p>Lesson 2 - let keywords</p>
+      <div className="lesson"><p>Lesson 2 - let keyword</p>
         <div>{`Message after var: ${message}`}</div>
         <div>{`Message after add function greet: ${message2}`}</div>
         <div>{`Message after let: ${message3}`}</div>
         <div>var test in console {varTest()}</div>
         <div>let test in console{letTest()}</div>
         <div>varFunc in console{varFunc()}</div>
-        <div>varFunc in console{varFunc()}</div>
+        <div>letFunc in console{letFunc()}</div>
+      </div>
+      <div className="lesson"><p>Lesson 3 - let keywords</p>
+        <div>greet func in console {greet()}</div>
+        <div>greet2 func in console {greet2("hello")}</div>
+        <div>greet3 func in console {greet3("Hello","Bill")}</div>
+        <div>receive func in console {receive()}</div>
       </div>
     </div>
   );
