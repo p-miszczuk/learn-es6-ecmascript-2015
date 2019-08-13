@@ -37,6 +37,13 @@ import {
   team
 } from './lessons/lesson5'
 
+import {
+  car,
+  car2,
+  car3,
+  car4
+} from './lessons/lesson6'
+
 function App() {
   return (
     <div className="lessons">
@@ -71,6 +78,12 @@ function App() {
       <div className="lesson"><p>Lesson 5 - shorthand properties</p>
         <div>person values in console (firstName, lastName) {console.log(person)}</div>
         <div>team values in console (firstName, lastName, mascot) {console.log(team)}</div>
+      </div>
+      <div className="lesson"><p>Lesson 6 - object enhancements</p>
+        <div>object car: {car.color} and {car.speed}</div>
+        <div>object car2: {car2.color} and {car2.speed} and {car2.go()}</div>
+        <div>object car3: {car3.color} and {car3.speed} and {car3.go2()}</div>
+        <div>object car4: {car4.color} and {car4.speed} and {car4.go()}</div>
       </div>
     </div>
   );
