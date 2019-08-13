@@ -44,6 +44,13 @@ import {
   car4
 } from './lessons/lesson6'
 
+import {
+  data,
+  firstArr,
+  firstArr2,
+  add
+} from './lessons/lesson7'
+
 function App() {
   return (
     <div className="lessons">
@@ -84,6 +91,14 @@ function App() {
         <div>object car2: {car2.color} and {car2.speed} and {car2.go()}</div>
         <div>object car3: {car3.color} and {car3.speed} and {car3.go2()}</div>
         <div>object car4: {car4.color} and {car4.speed} and {car4.go()}</div>
+      </div>
+      <div className="lesson"><p>Lesson 7 - spread operator</p>
+      {console.log("lesson 7")}
+        <div>show data in console {console.log(data)}</div>
+        <div>show data with spread in console {console.log(...data)}</div>
+        <div>show array after push in console {console.log(firstArr)}</div>
+        <div>show array after spread push in console {console.log(firstArr2)}</div>
+        <div>add func = {add(...firstArr)}</div>
       </div>
     </div>
   );
