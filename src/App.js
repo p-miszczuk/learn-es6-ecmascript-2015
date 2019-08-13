@@ -26,6 +26,12 @@ import {
   receive
 } from './lessons/lesson3'
 
+import {
+  VALUE,
+  VALUE2,
+  VALUE3
+} from './lessons/lesson4'
+
 function App() {
   return (
     <div className="lessons">
@@ -46,11 +52,16 @@ function App() {
         <div>varFunc in console{varFunc()}</div>
         <div>letFunc in console{letFunc()}</div>
       </div>
-      <div className="lesson"><p>Lesson 3 - let keywords</p>
+      <div className="lesson"><p>Lesson 3 - default values</p>
         <div>greet func in console {greet()}</div>
         <div>greet2 func in console {greet2("hello")}</div>
         <div>greet3 func in console {greet3("Hello","Bill")}</div>
         <div>receive func in console {receive()}</div>
+      </div>
+      <div className="lesson"><p>Lesson 4 - const</p>
+        <div>var changed value = {VALUE}</div>
+        <div>const value2 = {VALUE2}</div>
+        <div>const value3 object in console: bar: 'foo' {console.log(VALUE3)}</div>
       </div>
     </div>
   );
