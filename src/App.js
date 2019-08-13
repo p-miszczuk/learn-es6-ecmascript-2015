@@ -51,6 +51,12 @@ import {
   add
 } from './lessons/lesson7'
 
+import {
+  greeting,
+  addition,
+  message8
+} from './lessons/lesson8'
+
 function App() {
   return (
     <div className="lessons">
@@ -99,6 +105,12 @@ function App() {
         <div>show array after push in console {console.log(firstArr)}</div>
         <div>show array after spread push in console {console.log(firstArr2)}</div>
         <div>add func = {add(...firstArr)}</div>
+      </div>
+      <div className="lesson"><p>Lesson 7 - spread operator</p>
+        {console.log("lesson 8")}
+        <div>{`show greeting after template literals ${greeting}`}</div>
+        <div>{`show addition after template literals ${addition}`}</div>
+        <div>show message after template literals in console {console.log(message8)}</div>
       </div>
     </div>
   );
