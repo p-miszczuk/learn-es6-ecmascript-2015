@@ -32,6 +32,11 @@ import {
   VALUE3
 } from './lessons/lesson4'
 
+import {
+  person,
+  team
+} from './lessons/lesson5'
+
 function App() {
   return (
     <div className="lessons">
@@ -62,6 +67,10 @@ function App() {
         <div>var changed value = {VALUE}</div>
         <div>const value2 = {VALUE2}</div>
         <div>const value3 object in console: bar: 'foo' {console.log(VALUE3)}</div>
+      </div>
+      <div className="lesson"><p>Lesson 5 - shorthand properties</p>
+        <div>person values in console (firstName, lastName) {console.log(person)}</div>
+        <div>team values in console (firstName, lastName, mascot) {console.log(team)}</div>
       </div>
     </div>
   );

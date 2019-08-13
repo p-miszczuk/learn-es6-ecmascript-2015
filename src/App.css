@@ -1,5 +1,6 @@
 .lessons {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .lesson {
