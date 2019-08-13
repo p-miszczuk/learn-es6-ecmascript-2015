@@ -57,6 +57,21 @@ import {
   message8
 } from './lessons/lesson8'
 
+import {
+  generateObj,
+  firstColor,
+  fifthColor,
+  people
+} from './lessons/lesson9'
+
+let {name, state} = generateObj()
+
+let {name:firstName9, state:location} = generateObj();
+
+let [,John] = people
+
+const phoneNum = ({phone}) => phone
+
 function App() {
   return (
     <div className="lessons">
@@ -106,11 +121,26 @@ function App() {
         <div>show array after spread push in console {console.log(firstArr2)}</div>
         <div>add func = {add(...firstArr)}</div>
       </div>
-      <div className="lesson"><p>Lesson 7 - spread operator</p>
+      <div className="lesson"><p>Lesson 8 - template literals</p>
         {console.log("lesson 8")}
         <div>{`show greeting after template literals ${greeting}`}</div>
         <div>{`show addition after template literals ${addition}`}</div>
         <div>show message after template literals in console {console.log(message8)}</div>
+      </div>
+      <div className="lesson"><p>Lesson 9 - destructing assignment</p>
+        {console.log("lesson 9")}
+        <div>generate obj state: {state} </div>
+        <div>generate obj name: {name} </div>
+        <div>generate obj location: {location} </div>
+        <div>generate obj firstName9: {firstName9} </div>
+        <div>show fisrt color: {firstColor} </div>
+        <div>show fifth color: {fifthColor} </div>
+        <div>names in console
+          {
+            people.forEach(({firstName}) => console.log(firstName))
+          }
+        </div>
+        <div>{console.log(phoneNum(John))}</div>
       </div>
     </div>
   );
