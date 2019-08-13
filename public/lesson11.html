@@ -1,0 +1,14 @@
+<ul>
+    <li>15.99</li>
+    <li>5.99</li>
+    <li>25.99</li>
+    <li>8.99</li>
+    <li>35.99</li>
+    <li>12.99</li>
+</ul>
+
+<script>
+    const products = Array.from(document.querySelectorAll("li"));
+    products
+        .filter(product => parseFloat(product.innerHTML) < 13 ? product.style.color = "red" : product)
+</script>

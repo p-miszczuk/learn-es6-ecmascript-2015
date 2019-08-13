@@ -145,12 +145,14 @@ function App() {
         <div>{console.log(phoneNum(John))}</div>
       </div>
       <div className="lesson"><p>Lesson 10 - modules</p>
-        {console.log("lesson 9")}
+        {console.log("lesson 10")}
         <div>sumTwo 2 + 5 = {addNumbers.sumTwo(2,5)}</div>
         <div>sumTwo 2 + 5 + 3 = {addNumbers.sumThree(2,5,3)}</div>
+      </div>
       </div>
     </div>
   );
 }
+
 
 export default App;
