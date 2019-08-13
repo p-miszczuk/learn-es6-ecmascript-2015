@@ -66,6 +66,7 @@ import {
 
 import * as addNumbers from './lessons/lesson10'
 import './lessons/lesson12'
+import './lessons/lesson13'
 
 let {name, state} = generateObj()
 
